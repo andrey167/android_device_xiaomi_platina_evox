@@ -485,4 +485,11 @@
     <!-- True if the device supports Sustained Performance Mode -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
+<<<<<<< HEAD
+=======
+    <!-- When true, indicates that the vendor's IMS implementation requires a workaround when
+     sending a request to enable or disable the camera while the video session is also
+     paused. -->
+    <bool name="config_useVideoPauseWorkaround">true</bool>
+>>>>>>> 570d786 (platina: overlay: Enable video pause workaround for video calling)
 </resources>
