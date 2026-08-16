@@ -91,8 +91,7 @@ BOARD_KERNEL_CMDLINE := \
     msm_rtb.filter=0x37 \
     service_locator.enable=1 \
     swiotlb=1 \
-    usbcore.autosuspend=7 \
-    user_debug=31
+    usbcore.autosuspend=7 
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
