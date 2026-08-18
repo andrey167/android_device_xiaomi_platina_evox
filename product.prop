@@ -5,6 +5,7 @@ ro.sf.blurs_are_expensive=0
 ro.surface_flinger.supports_background_blur=0
 
 # Camera
+vidc.enc.dcvs.extra-buff-count=2
 persist.vendor.bokeh.switch.lux=290
 persist.vendor.camera.depth.focus.cb=0
 persist.vendor.camera.exif.make=Xiaomi
