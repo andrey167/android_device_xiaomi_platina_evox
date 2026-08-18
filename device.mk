@@ -30,6 +30,9 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/boot/boot-imag
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.dexopt.shared=quicken
 
+# Audio
+TARGET_EXCLUDES_AUDIOFX := true
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
@@ -423,6 +426,9 @@ PRODUCT_PACKAGES += \
     tune2fs_ramdisk \
     resize2fs_ramdisk
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \

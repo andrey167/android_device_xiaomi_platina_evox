@@ -1,5 +1,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- ROM maintainer name -->
-    <string name="build_maintainer_summary">andrey167</string>
-
+    <string name="build_maintainer_summary">andrey</string>
+    <string name="build_maintainer_donate_url" translatable="false">https://t.me/Mrandrey167</string>
 </resources>
