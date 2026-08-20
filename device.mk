@@ -30,8 +30,8 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/boot/boot-imag
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.dexopt.shared=quicken
 
-# Audio
-TARGET_EXCLUDES_AUDIOFX := true
+# Viper4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # ANT+
 PRODUCT_PACKAGES += \
