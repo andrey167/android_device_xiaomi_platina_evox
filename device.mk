@@ -9,6 +9,10 @@ DEVICE_PATH := device/xiaomi/platina
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+USE_DEX2OAT_DEBUG := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+WITH_DEXPREOPT_DEBUG_INFO := false
 
 # AndroidGo configuration
 # Speed profile services and wifi-service to reduce RAM and storage.
@@ -32,6 +36,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Viper4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -162,6 +169,10 @@ PRODUCT_COPY_FILES += \
 # Doze
 PRODUCT_PACKAGES += \
     XiaomiDoze
+
+# KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles
 
 # DPM
 PRODUCT_PACKAGES += \
@@ -503,8 +514,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl:64 \
-    android.hardware.vibrator@1.0-service
+      vendor.qti.hardware.vibrator.service
+
+# LiveDisplay native
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm \
+    vendor.lineage.livedisplay@2.0-service-sysfs
 
 # VINTF
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true

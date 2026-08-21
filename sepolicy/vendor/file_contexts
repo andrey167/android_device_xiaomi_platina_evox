@@ -32,3 +32,6 @@ vendor/lib64/libril-qc-logger\.so               u:object_r:same_process_hal_file
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
+
+# Vibrator
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.otter             u:object_r:hal_vibrator_default_exec:s0
