@@ -514,7 +514,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-      vendor.qti.hardware.vibrator.service
+    android.hardware.vibrator@1.0-impl:64 \
+    android.hardware.vibrator@1.0-service
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
