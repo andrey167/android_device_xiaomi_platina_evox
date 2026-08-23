@@ -7,3 +7,6 @@ type sysfs_rpm, sysfs_type, fs_type;
 type sysfs_system_sleep_stats, sysfs_type, fs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
 type thermal_data_file, file_type, data_file_type;
+
+# KProfiles
+type sysfs_kprofiles, sysfs_type, fs_type;
